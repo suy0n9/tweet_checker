@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import config
+import settings
 import datetime
 import time
 
 from requests_oauthlib import OAuth1Session
 
 
-twitter = OAuth1Session(config.CK, config.CS, config.AT, config.AS)
+twitter = OAuth1Session(settings.CK, settings.CS, settings.AT, settings.AS)
 
 url = "https://api.twitter.com/1.1/statuses/home_timeline.json"
 

@@ -1,14 +1,14 @@
 # coding: utf-8
 
 import argparse
-import config
+import settings
 import json
 from requests_oauthlib import OAuth1Session
 
 
 def execute(user, count):
 
-    twitter = OAuth1Session(config.CK, config.CS, config.AT, config.AS)
+    twitter = OAuth1Session(settings.CK, settings.CS, settings.AT, settings.AS)
 
     params = {'count': count,
               'screen_name': user,
